@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jevelin</title>
+
+        <!-- Favicons -->
+        <link href="assets/images/fav.png" rel="icon">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Sacramento&display=swap" rel="stylesheet">
+
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Animation -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
+        <!-- swipperjs -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+        <!-- counter js -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    
+    <body>
+
+        <nav class="navbar header-01 navbar-expand-lg" data-aos="fade" id="header-01">
+            <div class="container-fluid d-flex align-items-center justify-content-between header-01-container">
+                <a class="navbar-brand" href="food.html">
+                    <img src="assets/images/logo-footer.png" class="standard logo-image" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">    
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3.5 me-lg-5">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reservation">Reservation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+                        <li class="nav-item social-media p-0 d-flex">
+                            <a class="nav-link" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href="" class="nav-link social-media-icon" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="" class="nav-link social-media-icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="" class="nav-link social-media-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <nav class="navbar header-02 navbar-expand-lg" data-aos="fade-down" id="header-02">
+            <div class="container-fluid header-02-container d-flex align-items-center justify-content-between">
+                <a class="navbar-brand" href="food.html">
+                    <img src="assets/images/logo.png" class="logo-image" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3.5 me-lg-5">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reservation">Reservation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+                        <li class="nav-item social-media p-0 d-flex">
+                            <a class="nav-link" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href="" class="nav-link social-media-icon" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="" class="nav-link social-media-icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="" class="nav-link social-media-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+
+        <section class="hero" data-aos="fade" data-aos-delay="100">
+            <div class="container-fluid">
+                <div class="row justify-content-center hero-row">
+                    <div class="col-md-6 hero-column">
+                        
+                        <div class="hero-content">
+                            <div class="hero-heading">
+                                <div class="image">
+                                    <img src="assets/images/Vector-Smart-Object1.png" data-aos="fade" data-aos-delay="500" data-aos-duration="2000" alt="">
+                                </div>
+                                <div data-aos="zoom-in" data-aos-delay="200" class="heading-01">
+                                    <h1 data-aos="fade" data-aos-delay="100">Premium</h1>
+                                    <h2 data-aos="fade" data-aos-delay="100">QUALITY</h2>
+                                </div>
+                            </div>
+
+                            <div data-aos="fade" data-aos-delay="500" class="heading-02">
+                                <h1 data-aos="slide-right" data-aos-delay="300">Restaurant</h1>
+                                <h1 data-aos="slide-left" data-aos-delay="300">& Dishes</h1>
+                            </div>
+                            
+                            <div class="spinner">
+                                <div class="parallel-wrap">
+                                    <div class="loop-wrap">
+                                        <div class="mask-wrap">
+                                            <div class="rev-scroll-btn">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="what-we-can-offer" data-aos="fade">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-12">
+                        <div class="section-title" >
+                            <h1 data-aos="fade-up" data-aos-delay="100">What We Can Offer</h1>
+                            <div class="content" data-aos="fade-up" data-aos-delay="200">
+                                <span>from our hearts</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row row2">
+                    <div class="col-md-3">
+                        <div class="column-wrapper" data-aos="slide-right" data-aos-delay="200">
+                            <div class="image">
+                                <img src="assets/images/picture1.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="content">
+                                <h1><strong>Always</strong> Fresh</h1>
+                                <p>Nulla dapibus tempus malesuada. Duis ultrices lacinia eleifend. Etiam vel luctus nibh. Donec eu volutpat.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="column-wrapper" data-aos="slide-up" data-aos-delay="200">
+                            <div class="image">
+                                <img src="assets/images/picture2.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="content">
+                                <h1><strong>Eco</strong> Products</h1>
+                                <p>Nulla dapibus tempus malesuada. Duis ultrices lacinia eleifend. Etiam vel luctus nibh. Donec eu volutpat.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="column-wrapper" data-aos="slide-left" data-aos-delay="200">
+                            <div class="image">
+                                <img src="assets/images/picture3.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="content">
+                                <h1><strong>Healthy</strong> Desert</h1>
+                                <p>Nulla dapibus tempus malesuada. Duis ultrices lacinia eleifend. Etiam vel luctus nibh. Donec eu volutpat.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-us" data-aos="fade">
+            <div class="container-fluid">
+                <div class="row row-01">
+                    <div class="col-md-6 about-us-col-1" data-aos="slide-right" data-aos-delay="100">
+                        <div class="image"></div>
+                    </div>
+                    <div class="col-md-6 about-us-col-2" data-aos="fade" data-aos-delay="200">
+                        <div class="content" data-aos="fade-up" data-aos-delay="300">
+                            <h1 class="heading-style"><span><em>w</em></span></h1>
+                            <h1 class="heading-content">Welcome to Jevelin Restaurant</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis tortor eget sodales ultrices. Pellentesque bibendum condimentum neque, nec iaculis augue ultrices ac. Fusce interdum viverra aliquet.</p>
+                            <a href="#" class="about-us-link"><span>About Us</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-02">
+                    <div class="col-md-6 about-us-col-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="content" data-aos="fade-up" data-aos-delay="300">
+                            <h1 class="heading-style"><span><em>&</em></span></h1>
+                            <h1 class="heading-content">Chef & Owner Kate Fuson and Her Husband Jack</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis tortor eget sodales ultrices. Pellentesque bibendum</p>
+                            <a href="#" class="about-us-link"><span>Read More</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 about-us-col-4" data-aos="slide-left" data-aos-delay="100">
+                        <div class="image img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="team" data-aos="fade">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1 data-aos="fade-up" data-aos-delay="100">Our Team</h1>
+                            <div class="content" data-aos="fade-up" data-aos-delay="200">
+                                <span>is the best</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-11">
+
+                    
+                        <div class="row justify-content-center">
+                            <div class="col-md-3 team-member-column">
+                                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="image">
+                                        <a href=""><img src="assets/images/team-member-1.png" class="img-fluid" alt=""></a>
+                                    </div>
+                                    <div class="team-content" data-aos="fade-up" data-aos-delay="200">
+                                        <h3 class="team-member-heading">Carol William</h3>
+                                        <h4 class="team-member-designation">MANAGER</h4>
+                                        <p class="team-member-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis tortor eget sodales ultrices.</p>
+                                    </div>            
+                                </div>
+                            </div>
+                            <div class="col-md-3 team-member-column">
+                                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="image">
+                                        <a href=""><img src="assets/images/team-member-2.png" class="img-fluid" alt=""></a>
+                                    </div>   
+                                    <div class="team-content" data-aos="fade-up" data-aos-delay="200">                        
+                                        <h3 class="team-member-heading">Peter Lauren</h3>
+                                        <h4 class="team-member-designation">BAR DIRECTOR</h4>
+                                        <p class="team-member-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis tortor eget sodales ultrices.</p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-3 team-member-column">
+                                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="image">
+                                        <a href=""><img src="assets/images/team-member-3.png" class="img-fluid" alt=""></a>
+                                    </div>
+                                    <div class="team-content" data-aos="fade-up" data-aos-delay="200">
+                                        <h3 class="team-member-heading">Kate Fuson</h3>
+                                        <h4 class="team-member-designation">HEAD CHEF</h4>
+                                        <p class="team-member-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis tortor eget sodales ultrices.</p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-3 team-member-column" >
+                                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="image">
+                                        <a href=""><img src="assets/images/team-member-4.png" class="img-fluid" alt=""></a>
+                                    </div>
+                                    <div class="team-content" data-aos="fade-up" data-aos-delay="200">
+                                        <h3 class="team-member-heading">Jack Fuson</h3>
+                                        <h4 class="team-member-designation">WINE DIRECTOR</h4>
+                                        <p class="team-member-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis tortor eget sodales ultrices.</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Responsive Designs -->
+        <section class="responsive-designs" data-aos="fade">
+            <div class="container-fluid p-0">
+                <div class="row justify-content-center align-items-center responsive-row">
+                    <div class="col-md-4 col-sm-6 responsive-column">
+                        <div class="images" data-aos="zoom-in">
+
+                            <div class="smart-tv">
+                                <div class="tv-image">
+                                    <img src="assets/images/tv-image.png" class='tv-img' alt="">
+                                    <div class="tv-video">
+                                        <video src="assets/videos/Laptop-Video.mp4" class="tv-vid" muted autoplay loop></video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="laptop-image">
+                                <div class="lap">
+                                    <img src="assets/images/macbook pro.png" class='lap-img' alt="">
+                                    <div class="lap-video">
+                                        <video src="assets/videos/Laptop-Video.mp4" class="lap-vid" muted autoplay loop></video>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="ipad-landscape">
+                                <div class="ipad-landscape-image">
+                                    <img src="assets/images/ipad-landscape.png" class="ipad-landscape-img" alt="">
+                                    <div class="ipad-landscape-video">
+                                        <video src="assets/videos/IPad-Landscape-Video.mp4" class="ipad-land-vid" muted autoplay loop></video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ipad-potrait">
+                                <div class="ipad-potrait-image">
+                                    <img src="assets/images/ipad-potrait.png" class="ipad-potrait-img" alt="">
+                                    <div class="ipad-potrait-video">
+                                        <video src="assets/videos/IPad-Potrait-Video.mp4" class="ipad-pot-vid" muted autoplay loop></video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="iphone">
+                                <div class="iphone-image">
+                                    <img src="assets/images/iphone.png" class="iphone-img" alt="">  
+                                    <div class="iphone-video">
+                                        <video src="assets/videos/IPhone-Video.mp4" class="iphone-vid" muted autoplay loop></video>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Responsive Designs -->
+
+
+        <section class="bg-menu" data-aos="fade">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 bg-menu-column">
+                        <div class="column-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="menu" data-aos="fade">
+            <div class="container menu-container">
+                <div class="row row-01 justify-content-center">
+                    <div class="col-md-10 menu-column-01">
+                        <div class="content">
+                            <div class="image">
+                                <img src="assets/images/Layer-816.png" alt="">
+                            </div>
+                        </div>
+                        <div class="section-title">
+                            <h1 data-aos="fade-up" data-aos-delay="100">Enjoy The Best Cuisine</h1>
+                            <div class="content" data-aos="fade-up" data-aos-delay="100">
+                                <span>on this planet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-02">
+                    <div class="col-md-5 menu-column-02" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="heading">Starters</h2>
+                        <div class="content">
+                            <div class="box" data-aos="fade-up" data-aos-delay="100">
+                                <div class="dish">
+                                    <div class="dish-content">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="dish-heading">Proin gravida gravida</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="dish-price">$10.50</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider">
+                                        <div class="divider-line"></div>
+                                    </div>
+                                    <div class="dish-desc">
+                                        <p class="dish-desc-details"><em>Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan vitae, dapibus et.</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box" data-aos="fade-up" data-aos-delay="100">
+                                <div class="dish">
+                                    <div class="dish-content">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="dish-heading">Proin gravida gravida</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="dish-price">$10.50</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider">
+                                        <div class="divider-line"></div>
+                                    </div>
+                                    <div class="dish-desc">
+                                        <p class="dish-desc-details"><em>Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan vitae, dapibus et.</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box" data-aos="fade-up" data-aos-delay="100">
+                                <div class="dish">
+                                    <div class="dish-content">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="dish-heading">Proin gravida gravida</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="dish-price">$10.50</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider">
+                                        <div class="divider-line"></div>
+                                    </div>
+                                    <div class="dish-desc">
+                                        <p class="dish-desc-details"><em>Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan vitae, dapibus et.</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 menu-column-02" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="heading">Mains</h2>
+                        <div class="content">
+                            <div class="box" data-aos="fade-up" data-aos-delay="100">
+                                <div class="dish">
+                                    <div class="dish-content">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="dish-heading">Proin gravida gravida</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="dish-price">$10.50</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider">
+                                        <div class="divider-line"></div>
+                                    </div>
+                                    <div class="dish-desc">
+                                        <p class="dish-desc-details"><em>Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan vitae, dapibus et.</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box" data-aos="fade-up" data-aos-delay="100">
+                                <div class="dish">
+                                    <div class="dish-content">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="dish-heading">Proin gravida gravida</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="dish-price">$10.50</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider">
+                                        <div class="divider-line"></div>
+                                    </div>
+                                    <div class="dish-desc">
+                                        <p class="dish-desc-details"><em>Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan vitae, dapibus et.</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box" data-aos="fade-up" data-aos-delay="100">
+                                <div class="dish">
+                                    <div class="dish-content">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="dish-heading">Proin gravida gravida</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="dish-price">$10.50</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider">
+                                        <div class="divider-line"></div>
+                                    </div>
+                                    <div class="dish-desc">
+                                        <p class="dish-desc-details"><em>Lorem ipsum dolor sit amet purus vitae libero lacinia accumsan vitae, dapibus et.</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-03">
+                    <div class="col-md-3 menu-column-03" data-aos="fade-up" data-aos-delay="100">
+                        <div class="btn-full-menu">
+                            <a href=""><span>VIEW FULL MENU</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="customer-review" data-aos="fade">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-10">
+                        <div class="section-title">
+                            <h1 data-aos="fade-up" data-aos-delay="100">Customer</h1>
+                            <div class="content" data-aos="fade-up" data-aos-delay="100">
+                                <span>stories about us</span>
+                            </div>
+                        </div>
+
+                        <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="200">
+                            <div class="swiper-wrapper">
+                            
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="row gy-4 justify-content-center">
+                                            <div class="col-md-8">
+                                                <div class="testimonial-content">
+                                                    <img src="assets/images/customer-2.png" class="img-fluid testimonial-img" alt="">
+                                                    <p>Aenean consectetur lacinia diam a tincidunt. Vivamus facilisis lacus non velit suscipit pellentesque. Nam ac mauris nec mi lobortis sollicitudin sed at lacus. Fusce volutpat, dolor in suscipit pharetra, lacus sapien sollicitudin quam, non aliquam ex neque eu lectus. </p>
+                                                    <h3>Katey Gallardo</h3>
+                                                    <h4>Proud Client / CEO</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="row gy-4 justify-content-center">
+                                            <div class="col-md-8">
+                                                <div class="testimonial-content">
+                                                    <img src="assets/images/customer-3.png" class="img-fluid testimonial-img" alt="">
+                                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent in velit vehicula, iaculis tortor eu, placerat elit. Aenean iaculis nulla nec condimentum pulvinar.</p>
+                                                    <h3>Brandom</h3>
+                                                    <h4>Wolf</h4>
+                                                </div>
+                                            </div>         
+                                        </div>                                            
+                                    </div>
+                                </div>                        
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="book-now" data-aos="fade-up">
+            <div class="container book-now-container">
+                <div class="row book-now-row">
+                    <div class="col-md-12 book-now-column">
+                        <div class="book-now-box">
+                            <div class="section-title">
+                                <h1 data-aos="fade-up" data-aos-delay="100">Select a Date & Book Now</h1>
+                                <div class="content" data-aos="fade-up" data-aos-delay="100">
+                                    <span>We will confirm order via E-mail or Phone</span>
+                                </div>
+                            </div>
+
+                            <div class="book-now-form">
+                                <div class="form-info-1" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <span class="form-control-wrap">
+                                                <input type="text" class="form-control" placeholder="First Name*" aria-label="First name" required>
+                                            </span>
+                                          
+                                        </div>
+                                        <div class="col-md-6">
+                                            <span class="form-control-wrap">
+                                                <input type="text" class="form-control" placeholder="Last Name*" aria-label="Last name" required>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-info-2" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <span class="form-control-wrap">
+                                                <input type="email" class="form-control" placeholder="E-mail Address*" aria-label="E-mail Address" required>
+                                            </span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <span class="form-control-wrap">
+                                                <input type="text" class="form-control" placeholder="Phone Number*" aria-label="Phone Number" required>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-info-3" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <span class="form-control-wrap">
+                                                <input type="date" class="form-control" placeholder="dd-mm-yyyy*" aria-label="Date" required>
+                                            </span>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <span class="form-control-wrap">
+                                                <select class="form-control form-select" aria-label="Default select example">
+                                                    <option selected>Time*</option>
+                                                    <option><span>9:00</span></option>
+                                                    <option><span>9:30</span></option>
+                                                    <option>10:00</option>
+                                                    <option>10:30</option>
+                                                    <option>11:00</option>
+                                                    <option>11:30</option>
+                                                    <option>12:00</option>
+                                                    <option>12:30</option>
+                                                    <option>13:00</option>
+                                                    <option>13:30</option>
+                                                    <option>14:00</option>
+                                                    <option>14:30</option>
+                                                    <option>15:00</option>
+                                                    <option>15:30</option>
+                                                    <option>16:00</option>
+                                                    <option>16:30</option>
+                                                    <option>17:00</option>
+                                                    <option>17:30</option>
+                                                    <option>18:00</option>
+                                                    <option>18:30</option>
+                                                    <option>19:00</option>
+                                                    <option>19:30</option>
+                                                    <option>20:00</option>
+                                                    <option>20:30</option>
+                                                    <option>21:00</option>
+                                                    <option>21:30</option>
+                                                    <option>22:00</option>
+                                                </select>
+                                            </span>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <span class="form-control-wrap">
+                                                <select class="form-control form-select" aria-label="Default select example">
+                                                    <option selected>Persons*</option>
+                                                    <option>1 person</option>
+                                                    <option>2 person</option>
+                                                    <option>3 person</option>
+                                                    <option>4 person</option>
+                                                    <option>5 person</option>
+                                                    <option>6 person</option>
+                                                    <option>7 person</option>
+                                                    <option>8 person</option>
+                                                    <option>9 person</option>
+                                                    <option>10 person</option>
+                                                    <option>11 person</option>
+                                                    <option>12 person</option>
+                                                    <option>13 person</option>
+                                                    <option>14 person</option>
+                                                    <option>15 person</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-info-btn" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-4">
+                                            <button type="submit" class="btn book-now-btn">Book Now</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="timming-map" data-aos="fade">
+            <div class="container-fluid">
+                <div class="row timming-map-row-outer">
+                    <div class="col-md-6 timming-map-col-outer-01" data-aos="fade-up" data-aos-delay="100">
+                        <div class="row timming-map-inner justify-content-center p-0 m-0">
+                            
+                            <div class="col-md-12 timming-map-column-wrapper">
+                                <div class="box-01">
+                                    <h1 class="box-heading">How to Find <br>& Contact Us</h1>
+                                </div>
+                            </div>
+                            
+                        <div class="row justify-content-center">
+                            <div class="box-02 col-md-8">
+                                <div class="row box-02-inner">
+                                        <div class="col-md-6 box-02-content">
+                                            <p class="box-02-heading">
+                                                <strong>Monday - Thursday</strong>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="box-02-timing">
+                                                10:00 - 22:00
+                                            </p>
+                                        </div>
+                                </div>
+
+                                <div class="divider">
+                                    <div class="divider-line"></div>
+                                </div>
+
+                                <div class="row box-02-inner">
+                                        <div class="col-md-6 box-02-content">
+                                            <p class="box-02-heading">
+                                                <strong>Friday - Saturday</strong>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="box-02-timing">
+                                                11:00 - 21:00
+                                            </p>
+                                        </div>
+                                </div>
+
+                                <div class="divider">
+                                    <div class="divider-line"></div>
+                                </div>
+
+                                <div class="row box-02-inner">
+                                        <div class="col-md-6 box-02-content">
+                                            <p class="box-02-heading">
+                                                <strong>Sunday</strong>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="box-02-timing">
+                                                closed
+                                            </p>
+                                        </div>
+                                </div>
+
+                                <div class="divider">
+                                    <div class="divider-line"></div>
+                                </div>
+                                        
+                            </div>
+
+                        </div>
+                                
+                        <div class="row justify-content-center">
+                            <div class="box-03 col-md-8">
+                                <div class="row box-03-inner justify-content-center">
+                                    <div class="col-md-12">
+                                        <p class="box-03-heading"><strong>Postal Address:</strong></p>
+                                        <p class="box-03-sub-heading">Mánatún 35 105 Reykjavík</p>
+                                    </div>
+                                </div>
+                                <div class="divider">
+                                    <div class="divider-line"></div>
+                                </div>
+
+                                <div class="row box-03-inner">
+                                    <div class="col-md-12">
+                                        <p class="box-03-heading"><strong>Restaurant:</strong></p>
+                                        <p class="box-03-sub-heading">Grafarvogur 69, ON K2P 0G1, Reykjavík</p>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="row box-03-inner">
+                                    <div class="col-md-12">
+                                        <p class="box-03-heading"><strong>Business Phone:</strong></p>
+                                        <p class="box-03-sub-heading">+1 844 295 0715</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                                
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 timming-map-col-outer-02" data-aos="fade" data-aos-delay="100">
+                        <div class="map">
+                            <div class="map-inner">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14228.65751999657!2d75.79515480396729!3d26.930002818940427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3ef6d6d6883%3A0x1f87f1cdec8518d5!2sZone%20by%20The%20Park%20Hotel%2C%20Jaipur!5e0!3m2!1sen!2sin!4v1695826282551!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                            </div>
+                        </div>
+                    </div>
+                            
+                    
+                        
+                </div>
+                            
+            
+            </div>
+                    
+                
+        </section>
+        
+
+        <footer class="footer" data-aos="fade">
+            <div class="container-fluid footer-container">
+                <div class="row footer-row">
+                    <div class="col-md-10 m-0 p-0">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-md-3 logo-footer-column">
+                                <img src="assets/images/logo-footer.png" alt="">
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <div class="copyright">
+                                    &copy; Copyright <strong><span>Jevelin</span></strong>. All Rights Reserved
+                                </div>
+                                <div class="credits">
+                                    Designed by <a href="#">Punit Jain</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 icons-footer-column">
+                                <ul class="m-0 p-0">
+                                    <li class="social-media p-0 d-flex justify-content-center">
+                                        <a href="" class="social-media-icon" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="" class="social-media-icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="" class="social-media-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll Top Button -->
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+
+        <!-- Preloader -->
+        <div id="preloader" class="preloader" data-aos="fade">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- BootStrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- our aos data -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>        
+        
+        <script src="assets/js/main.js"></script>
+    </body>
+
+</html>
